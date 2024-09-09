@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body style="background-color: black; color: white;">
+    <body style="background-color: black; color: white; margin: 0;">
 
         <header style="position: fixed; width: 100%; display: flex; top: 5px; padding-left: 1rem">
 
@@ -20,7 +20,7 @@
         </header>
 
 
-        <section style="display: flex; justify-content: space-between; align-items: center; padding-top: 5rem;">
+        <section style="display: flex; justify-content: space-between; align-items: center; height: 100vh;">
 
             <div style="position: relative; padding-left: 9%;">
                 <img style="width: 36vmax; border-radius: 50%;" src="img/avatar2.jpg" alt="">
@@ -30,22 +30,30 @@
                 <h1 style="font-size:3rem;">Hi, It's <span style="color: Plum;">Dias</span> </h1>
                 <h3 style="font-size:2rem;">I'm an <span style="color: Plum;">Artist</span></h3>
                 <p style="color: white; opacity: 0.8; font-size: 1.5rem;">I'm a Performance Artist. I'm hired for people to fullfill their fantasies. Their <br> Deep Dark Fantasies</p>
-            </div>
 
+                <h5 style="opacity: 0.8;">You can find me there: <br>
+                    <a href="https://t.me/Onanore" target="_blank"><img src="img/icons8-telegram-logo-50.png" alt="" style="width: 25px;"></a>
+                    <a href="https://github.com/Onanore" target="_blank"><img src="img/icons8-github-50.png" alt="" style="width: 25px; padding-left: 1rem;"></a>
+                </h5>
+            </div>
+            
         </section>
 
 
-        <footer style="position: fixed; opacity: 0.8; bottom: 0; display: flex; justify-content: space-between; width:100%;">
-
-            <div style="padding-left: 1rem;">
-                <h5>You can find me there: <br>
-                    <a href="https://t.me/Onanore" target="_blank"><img src="img/icons8-telegram-logo-50.png" alt="" style="width: 25px;"></a>
-                    <a href="https://github.com/Onanore" target="_blank"><img src="img/icons8-github-50.png" alt="" style="width: 25px;"></a>
-                </h5>
-            </div>
-
-            <div style="padding-right: 2rem;">
-                <h5>mail: <a href="mailto:shokanovd@inbox.ru" target="_blank" style="text-decoration: none; color: plum;">shokanovd@inbox.ru</a></h5>
+        <footer style="opacity: 0.8; bottom: 0; width:100%; padding-bottom: 5rem;">
+            <div style="padding-left: 9%;">
+                <h3 style="font-size: 2rem;">Contact me</h3>
+                <form action="/KodOtpravkiMailov.js">
+                    <p>
+                        Your name: <input type="text" name="name" placeholder="David" size="10" style="background-color: black; border-color: grey; color: white;"> 
+                        Your mail: <input type="email" name="email" placeholder="example@mail.ru" style="background-color: black; border-color: grey; color: white;">
+                    </p>
+                    
+                    
+                    <p>Task: <input type="text" name="descriptionOfTask" placeholder="Your task and it's description" size="100" style="background-color: black; border-color: grey; color: white;"></p>
+                    
+                    <input type="submit" value="Submit" style="background-color: black; border-color: grey; color: white;">
+                </form>    
             </div>
 
         </footer>
