@@ -1,0 +1,223 @@
+:root {
+    --colorPrimary: hsl(250, 50%, 10%);
+    --colorSecondary: hsl(250, 50%, 90%);
+    --colorAccent: hsl(310, 80%, 80%);
+    --transition: 0.3s ease-in-out;
+    --systemFontStack: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --fontStack: Gotham, var(--systemFontStack);
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: var(--fontStack);
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100svh;
+    overflow-x: hidden;
+    background-color: var(--colorPrimary);
+    color: var(--colorSecondary);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2, h3 {
+    font-size: 2.5rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8%;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8vh;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+nav a{
+    font-size: 1.2rem;
+    color: var(--colorSecondary);
+    font-weight: 700;
+    border-bottom: none;
+    transition: var(--transition);
+    transform: rotate(-90deg);
+}
+
+nav a:hover {
+    color: var(--colorAccent);
+    transition: var(--transition);
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--colorAccent);
+    font-weight: 700;
+}
+
+section {
+    min-height: 100vh;
+    padding: 2rem 9% 2rem;
+}
+
+.section-name {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--colorSecondary);
+    letter-spacing: normal;
+    opacity: 0.8;
+}
+
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+span {
+    color: var(--colorAccent);
+}
+
+.home-image {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    scale: 1;
+    transition: var(--transition);
+}
+
+.home-image:hover {
+    scale: 1.05;
+    transition: var(--transition);
+}
+
+.media-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin: auto 0 5svh 0;
+}
+
+.media-links {
+    width: 1.5rem;
+    height: 1.5rem;
+    scale: 1;
+    transition: var(--transition);
+}
+
+.media-links:hover {
+    scale: 1.2;
+    transition: var(--transition);
+}
+
+
+.project-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 64svh;
+}
+
+footer {
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.contact-form {
+    height: 90svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-inputs-group {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+
+.form-user-information {
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    background-color: var(--colorPrimary);
+    color: var(--colorSecondary);
+    border-bottom: 1px var(--colorSecondary) solid;
+    border-radius: 1rem;
+}
+
+.form-task-description {
+    padding: 1rem 1rem;
+    width: 100%;
+    font-size: 2rem;
+    background-color: var(--colorPrimary);
+    color: var(--colorSecondary);
+    border-bottom: 1px var(--colorSecondary) solid;
+    border-radius: 1rem;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.form-submit-button {
+    background-color: transparent;
+    color: var(--colorSecondary);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form-submit-arrow {
+    background-color: var(--colorSecondary);
+    width: 2.5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: var(--colorSecondary);
+    padding: 0.5rem;
+    border: 2px var(--colorSecondary) solid;
+    border-radius: 50%;
+    cursor: pointer;
+}

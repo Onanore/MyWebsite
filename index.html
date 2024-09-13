@@ -6,56 +6,76 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body style="background-color: black; color: white; margin: 0;">
+    <body>
 
-        <header style="position: fixed; width: 100%; display: flex; top: 5px; padding-left: 1rem">
-
-            <nav style="font-size: 1.5rem; word-spacing: 2rem;">
-                <a href="index.html" style="text-decoration: none; color: white;">Home</a>
-                <a href="projects.html" style="text-decoration: none; color: white;">Projects</a>
+        <header>
+            <nav>
+                <a href="#home-page">Home</a>
+                <a href="#project-1">Projects</a>
+                <a href="Contact.html">Contact</a>
             </nav>
 
+            <div class="media-links-container">
+                <a href="https://t.me/Onanore" target="_blank"><img src="img/icons8-telegram-logo-50.webp" alt="" class="media-links"></a>
+                <a href="https://github.com/Onanore" target="_blank"><img src="img/icons8-github-50.webp" alt="" class="media-links"></a>
+            </div>
         </header>
 
 
-        <section style="display: flex; justify-content: space-between; align-items: center; height: 100vh;">
+        <section id="home-page" class="home">
+            <div>
+                <p>Shokanov Dias</p>
+                <h1>PROGRAMMER</h1>
+                <h1>+GAMER</h1>
+            </div>
+            <div>
+                <img src="img/avatar2.webp" alt="" class="home-image">
+            </div>
+        </section>
 
-            <div style="position: relative; padding-left: 9%;">
-                <img style="width: 36vmax; border-radius: 50%;" src="img/avatar2.jpg" alt="">
+        <section id="project-1" class="project-section">
+            <div class="project-information">
+                <p>01</p>
+                <h3>Project name</h3>
+                <p>Description of project</p>
+            </div>
+            <div class="project-section">
+                <img src="" alt="">
             </div>
 
-            <div style="width: 40%; padding-right: 9%;">
-                <h1 style="font-size:3rem;">Hi, It's <span style="color: Plum;">Dias</span> </h1>
-                <h3 style="font-size:2rem;">I'm an <span style="color: Plum;">Artist</span></h3>
-                <p style="color: white; opacity: 0.8; font-size: 1.5rem;">I'm a Performance Artist. I'm hired for people to fullfill their fantasies. Their <br> Deep Dark Fantasies</p>
+        </section>
 
-                <h5 style="opacity: 0.8;">You can find me there: <br>
-                    <a href="https://t.me/Onanore" target="_blank"><img src="img/icons8-telegram-logo-50.png" alt="" style="width: 25px;"></a>
-                    <a href="https://github.com/Onanore" target="_blank"><img src="img/icons8-github-50.png" alt="" style="width: 25px; padding-left: 1rem;"></a>
-                </h5>
+        <section id="project-2" class="project-section">
+            <div class="project-section">
+                <img src="" alt="">
             </div>
-            
+            <div class="project-information">
+                <p>02</p>
+                <h3>Project name</h3>
+                <p>Description of project</p>
+            </div>
+
+        </section>
+
+        <section id="project-3" class="project-section">
+            <div class="project-information">
+                <p>03</p>
+                <h3>Project name</h3>
+                <p>Description of project</p>
+            </div>
+            <div class="project-section">
+                <img src="" alt="">
+            </div>
+
         </section>
 
 
-        <footer style="opacity: 0.8; bottom: 0; width:100%; padding-bottom: 5rem;">
-            <div style="padding-left: 9%;">
-                <h3 style="font-size: 2rem;">Contact me</h3>
-                <form action="/KodOtpravkiMailov.js">
-                    <p>
-                        Your name: <input type="text" name="name" placeholder="David" size="10" style="background-color: black; border-color: grey; color: white;"> 
-                        Your mail: <input type="email" name="email" placeholder="example@mail.ru" style="background-color: black; border-color: grey; color: white;">
-                    </p>
-                    
-                    
-                    <p>Task: <input type="text" name="descriptionOfTask" placeholder="Your task and it's description" size="100" style="background-color: black; border-color: grey; color: white;"></p>
-                    
-                    <input type="submit" value="Submit" style="background-color: black; border-color: grey; color: white;">
-                </form>    
-            </div>
-
+        <footer>
+            <p>Shokanov Dias. Crafted with swearing</p>
         </footer>
         
     </body>
